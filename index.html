@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mantepa Luxe Shuttle - Safe and reliable transport at affordable rates. Airport transfers, private tours, events and more.">
+  <title>Mantepa Luxe Shuttle | Safe & Reliable Transport</title>
+  <style>
+    :root{--navy:#101827;--gold:#d4a64a;--cream:#faf7f1;--ink:#1f2937;--white:#fff}
+    *{box-sizing:border-box} html{scroll-behavior:smooth}
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);line-height:1.6;background:var(--white)}
+    .container{width:min(1120px,92%);margin:auto}
+    nav{position:sticky;top:0;z-index:50;background:rgba(16,24,39,.97);color:#fff}
+    .nav-inner{min-height:70px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{font-size:1.25rem;font-weight:800;letter-spacing:.3px}.brand span{color:var(--gold)}
+    .nav-links{display:flex;gap:22px}.nav-links a{color:#fff;text-decoration:none;font-weight:600;font-size:.95rem}
+    .menu{display:none;background:none;border:1px solid #fff;color:#fff;border-radius:7px;padding:8px 11px;font-size:1.1rem}
+    .hero{min-height:650px;color:#fff;display:grid;place-items:center;background:linear-gradient(110deg,rgba(16,24,39,.92),rgba(16,24,39,.58)),url('https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=1800&q=80') center/cover}
+    .hero-content{padding:80px 0;max-width:760px}.eyebrow{color:#f1c86b;text-transform:uppercase;letter-spacing:2px;font-weight:700;font-size:.85rem}
+    h1{font-size:clamp(2.6rem,7vw,5.5rem);line-height:1.02;margin:.45rem 0 1rem}.hero p{font-size:1.15rem;max-width:620px}
+    .buttons{display:flex;flex-wrap:wrap;gap:14px;margin-top:28px}.btn{display:inline-block;padding:14px 23px;border-radius:8px;text-decoration:none;font-weight:800;border:2px solid transparent;cursor:pointer}
+    .primary{background:var(--gold);color:#101827}.secondary{border-color:#fff;color:#fff}
+    section{padding:82px 0}.alt{background:var(--cream)}.section-tag{color:#a77c26;text-transform:uppercase;font-weight:800;letter-spacing:1.8px;font-size:.8rem}
+    h2{font-size:clamp(2rem,4vw,3.1rem);line-height:1.1;margin:.35rem 0 1rem;color:var(--navy)}
+    .lead{max-width:720px;color:#55606f}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:35px}
+    .card{padding:28px;border:1px solid #e6e2db;border-radius:14px;background:#fff;box-shadow:0 5px 20px rgba(16,24,39,.05)}
+    .icon{font-size:1.7rem}.card h3{margin:10px 0 7px;color:var(--navy)}
+    .about{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}.about-image{min-height:410px;border-radius:18px;background:url('https://images.unsplash.com/photo-1514565131-fce0801e5785?auto=format&fit=crop&w=1200&q=80') center/cover}
+    .features{list-style:none;padding:0}.features li{margin:12px 0}.features li:before{content:"✓";color:#b68a31;font-weight:bold;margin-right:10px}
+    .booking-wrap{display:grid;grid-template-columns:.85fr 1.4fr;gap:35px;align-items:start}.booking-info{background:var(--navy);color:#fff;padding:35px;border-radius:16px}.booking-info h3{font-size:1.8rem;margin-top:0}.booking-info a{color:#f1c86b;text-decoration:none;font-weight:bold}
+    form{background:#fff;border:1px solid #e6e2db;padding:30px;border-radius:16px;box-shadow:0 8px 28px rgba(16,24,39,.06)}
+    .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.full{grid-column:1/-1}
+    label{display:block;font-weight:700;font-size:.9rem;margin-bottom:5px;color:#273244}input,select,textarea{width:100%;padding:13px;border:1px solid #ccd1d8;border-radius:7px;font:inherit}textarea{min-height:110px;resize:vertical}
+    .contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.contact-item{padding:25px;background:#fff;border-radius:12px;border:1px solid #e6e2db}.contact-item a{color:#a77c26;font-weight:700;text-decoration:none}
+    footer{background:var(--navy);color:#d9dee8;padding:35px 0;text-align:center}.floating-whatsapp{position:fixed;right:20px;bottom:20px;background:#25D366;color:white;padding:14px 18px;border-radius:50px;text-decoration:none;font-weight:800;box-shadow:0 5px 20px rgba(0,0,0,.25);z-index:60}
+    @media(max-width:760px){.menu{display:block}.nav-links{display:none;position:absolute;left:0;right:0;top:70px;background:var(--navy);padding:18px 4%;flex-direction:column}.nav-links.open{display:flex}.grid,.contact-grid{grid-template-columns:1fr}.about,.booking-wrap{grid-template-columns:1fr;gap:28px}.about-image{min-height:280px}.form-grid{grid-template-columns:1fr}.full{grid-column:auto}.hero{min-height:590px}}
+  </style>
+</head>
+<body>
+<nav>
+  <div class="container nav-inner">
+    <div class="brand">Mantepa <span>Luxe Shuttle</span></div>
+    <button class="menu" aria-label="Open menu">☰</button>
+    <div class="nav-links">
+      <a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a><a href="#booking">Book Now</a><a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="home">
+  <div class="container hero-content">
+    <div class="eyebrow">Professional Passenger Transport</div>
+    <h1>Safe & Reliable Transport at Affordable Rates</h1>
+    <p>From airport transfers and private tours to conferences, events and cross-border trips, Mantepa Luxe Shuttle is ready to get you to your destination.</p>
+    <div class="buttons">
+      <a class="btn primary" href="#booking">Book Your Trip</a>
+      <a class="btn secondary" href="https://wa.me/27718821549" target="_blank" rel="noopener">WhatsApp Us</a>
+    </div>
+  </div>
+</header>
+
+<section id="about">
+ <div class="container about">
+   <div class="about-image" role="img" aria-label="Professional shuttle transport"></div>
+   <div>
+    <div class="section-tag">About Mantepa Luxe Shuttle</div>
+    <h2>Travel with confidence.</h2>
+    <p class="lead">We provide transport solutions for individual travellers, families, groups, business travellers and special events.</p>
+    <ul class="features"><li>Airport and long-distance transfers</li><li>Private, leisure and business travel</li><li>Conference and event transportation</li><li>Cross-border trip enquiries</li><li>Convenient booking via WhatsApp</li></ul>
+    <a class="btn primary" href="#contact">Get in Touch</a>
+   </div>
+ </div>
+</section>
+
+<section class="alt" id="services">
+ <div class="container">
+  <div class="section-tag">What We Offer</div><h2>Our Services</h2>
+  <p class="lead">Choose the transport service that best suits your journey.</p>
+  <div class="grid">
+   <article class="card"><div class="icon">✈️</div><h3>Airport Transfers</h3><p>Convenient transport to and from the airport.</p></article>
+   <article class="card"><div class="icon">🚐</div><h3>Shuttle Services</h3><p>Reliable passenger transport for planned journeys.</p></article>
+   <article class="card"><div class="icon">🗺️</div><h3>Private Tours</h3><p>Private transport for sightseeing and tailored travel.</p></article>
+   <article class="card"><div class="icon">🎉</div><h3>Events Transportation</h3><p>Transport arrangements for special events and occasions.</p></article>
+   <article class="card"><div class="icon">💼</div><h3>Conference Trips</h3><p>Professional transport for delegates and business travel.</p></article>
+   <article class="card"><div class="icon">🌍</div><h3>Leisure & Cross-Border Travel</h3><p>Transport for leisure journeys and cross-border trip enquiries.</p></article>
+  </div>
+ </div>
+</section>
+
+<section id="booking">
+ <div class="container">
+  <div class="section-tag">Book Now</div><h2>Request Your Trip</h2>
+  <div class="booking-wrap">
+   <aside class="booking-info"><h3>Let's plan your journey.</h3><p>Complete the form and your booking request will open in WhatsApp with the trip details ready to send.</p><p><strong>Call:</strong><br><a href="tel:+27718821549">+27 (0) 71 882 1549</a><br><a href="tel:+27734864941">+27 (0) 73 486 4941</a></p><p><strong>Email:</strong><br><a href="mailto:Karabo.mantepa@gmail.com">Karabo.mantepa@gmail.com</a></p></aside>
+   <form id="bookingForm">
+    <div class="form-grid">
+     <div><label for="name">Full Name *</label><input id="name" required></div>
+     <div><label for="phone">Phone Number *</label><input id="phone" type="tel" required></div>
+     <div class="full"><label for="email">Email Address</label><input id="email" type="email"></div>
+     <div><label for="service">Service *</label><select id="service" required><option value="">Select a service</option><option>Airport Transfer</option><option>Shuttle Service</option><option>Private Tour</option><option>Events Transportation</option><option>Conference Trip</option><option>Leisure Travel</option><option>Cross-Border Trip</option></select></div>
+     <div><label for="passengers">Passengers</label><input id="passengers" type="number" min="1" placeholder="e.g. 4"></div>
+     <div><label for="pickup">Pick-up Location *</label><input id="pickup" required></div>
+     <div><label for="destination">Destination *</label><input id="destination" required></div>
+     <div><label for="date">Travel Date *</label><input id="date" type="date" required></div>
+     <div><label for="time">Pick-up Time</label><input id="time" type="time"></div>
+     <div class="full"><label for="notes">Additional Requirements</label><textarea id="notes" placeholder="Flight number, return trip, luggage or any other requirements..."></textarea></div>
+     <div class="full"><button class="btn primary" type="submit">Send Booking Request via WhatsApp</button></div>
+    </div>
+   </form>
+  </div>
+ </div>
+</section>
+
+<section class="alt" id="contact">
+ <div class="container">
+  <div class="section-tag">Contact Us</div><h2>Ready to travel?</h2>
+  <div class="contact-grid">
+   <div class="contact-item"><h3>Call Us</h3><p><a href="tel:+27718821549">+27 (0) 71 882 1549</a><br><a href="tel:+27734864941">+27 (0) 73 486 4941</a></p></div>
+   <div class="contact-item"><h3>WhatsApp</h3><p><a href="https://wa.me/27718821549" target="_blank" rel="noopener">Chat with us on WhatsApp</a></p></div>
+   <div class="contact-item"><h3>Email Us</h3><p><a href="mailto:Karabo.mantepa@gmail.com">Karabo.mantepa@gmail.com</a></p></div>
+  </div>
+ </div>
+</section>
+
+<footer><div class="container"><strong>Mantepa Luxe Shuttle</strong><p>Safe and Reliable Transport at Affordable Rates</p><small>© <span id="year"></span> Mantepa Luxe Shuttle. All rights reserved.</small></div></footer>
+<a class="floating-whatsapp" href="https://wa.me/27718821549" target="_blank" rel="noopener">WhatsApp</a>
+<script>
+const menu=document.querySelector('.menu'), links=document.querySelector('.nav-links');
+menu.addEventListener('click',()=>links.classList.toggle('open'));
+document.querySelectorAll('.nav-links a').forEach(a=>a.addEventListener('click',()=>links.classList.remove('open')));
+document.getElementById('year').textContent=new Date().getFullYear();
+document.getElementById('bookingForm').addEventListener('submit',function(e){
+ e.preventDefault();
+ const v=id=>document.getElementById(id).value.trim();
+ const msg=`Hello Mantepa Luxe Shuttle,%0A%0AI would like to request a booking:%0A%0A*Name:* ${encodeURIComponent(v('name'))}%0A*Phone:* ${encodeURIComponent(v('phone'))}%0A*Email:* ${encodeURIComponent(v('email')||'Not provided')}%0A*Service:* ${encodeURIComponent(v('service'))}%0A*Passengers:* ${encodeURIComponent(v('passengers')||'Not specified')}%0A*Pick-up:* ${encodeURIComponent(v('pickup'))}%0A*Destination:* ${encodeURIComponent(v('destination'))}%0A*Date:* ${encodeURIComponent(v('date'))}%0A*Time:* ${encodeURIComponent(v('time')||'Not specified')}%0A*Additional requirements:* ${encodeURIComponent(v('notes')||'None')}`;
+ window.open('https://wa.me/27718821549?text='+msg,'_blank');
+});
+</script>
+</body>
+</html>
